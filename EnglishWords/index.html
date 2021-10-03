@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>English-Chinese</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="outer">
+      <div id="paper-display-section" class="inner">
+        <h1>Paper Display:</h1>
+        <div id="paper-display"></div>
+        <br />
+        <button id="change-paper-btn">Modify</button>
+      </div>
+    </div>
+
+    <div id="words-display-section">
+      <table id="map_table">
+        <tr>
+          <th>English Word</th>
+          <th>Chinese Word</th>
+        </tr>
+      </table>
+    </div>
+
+    <div id="word-add-section">
+      <form action="">
+        <label for="english">English: </label>
+        <input type="text" id="english" />
+        <label for="chinese"></label>
+        <input type="text" id="chinese" />
+        <input type="submit" value="Submit" id="submit" />
+      </form>
+    </div>
+
+    <div id="paper-modifier" class="invisible modal">
+      <h2>Modify your Paper:</h2>
+      <textarea
+        id="paper-modifier-textarea"
+        style="border: 1px solid"
+        rows="50"
+        cols="50"
+      >
+Modify your paper</textarea
+      >
+      <br />
+      <button id="paper-modifer-btn-done">Done</button>
+    </div>
+
+    <template id="template_word_map">
+      <tr>
+        <th id="map-english">PL</th>
+        <th id="map-chinese">PL</th>
+      </tr>
+    </template>
+  </body>
+</html>

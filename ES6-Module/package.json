@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  },
+  "name": "es6-module",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "start":"parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
