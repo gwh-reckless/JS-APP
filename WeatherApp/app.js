@@ -8,7 +8,7 @@ window.addEventListener('load', () => {
   let long
   let lat
 
-  var options = {
+  let options = {
     enableHighAccuracy: true,
     timeout: 5000,
     maximumAge: 0,
@@ -71,8 +71,7 @@ window.addEventListener('load', () => {
       },
       (err) => {
         console.log(err)
-      },
-      options
+      }
     )
   } else {
     alert('Please allow  to use geo location')
@@ -88,3 +87,13 @@ window.addEventListener('load', () => {
 
   function iconMap(icon) {}
 })
+
+// navigator.geolocation.getCurrentPosition(
+//   (position) => console.log(position),
+//   (err) => {
+//     console.log(err)
+//   },
+//   {
+//     maximumAge: 0,
+//   }
+// )
